@@ -82,17 +82,17 @@ python3 Annotations/Annotation_synthetic2.py
 * Configure settings and initialize paths in `Model_<name>/cfg.txt`
 * Train YOLOv3 model.
 ```
-!./scripts/run_scores.sh
-python3 scores_all.py
-python3 Visualizations/create_graphs.py
-python3 Results_IMGLabels/scores_IMGLabels.py
+!./scripts/run_train.sh
+python3 train.py >Main/Model_Synth_Lab/linux_logs/train.log
 ```
 
 ### Benchmark & Evaluate All YOLOv3 Trained Models
 * Obtain Precision-Recall (PR) curve and highest F1-scores by iterating through all `Main/Model_<name>/Evaluation` folders and calculate & combine all performance scores.
 ```
-!./scripts/run_train.sh
-python3 train.py >Main/Model_Synth_Lab/linux_logs/train.log
+!./scripts/run_scores.sh
+python3 scores_all.py
+python3 Visualizations/create_graphs.py
+python3 Results_IMGLabels/scores_IMGLabels.py
 ```
 * Case-by-case AP-score Evaluation using `Main/scores_IMGLabels.py` (OPTIONAL)
   * Resulting case-by-case evaluation score can be found in `Main/Evaluation_IMGlabels-case.xlsx` with each tab corresponding to a feature kept fixed.
