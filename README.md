@@ -3,6 +3,8 @@ Person-detection model based on YOLOv3 using 3D synthetic images from Blender.
 
 A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3).
 
+![](https://learn.alwaysai.co/hubfs/Screen%20Shot%202020-01-23%20at%202.28.16%20PM.png)
+
 ---
 
 ## Introduction
@@ -20,34 +22,43 @@ Hence, in the virtue of confidentiality restrictions and ethical claims, there i
 
 ## Getting Started
 
-### 1.1 BLENDER 2.92 CUSTOM-BUILT 
-Folder: *Huy/Blender Custom/*
+### Installation Blender 2.92 custom-built
+* Enable rendering of viewer nodes in background mode to properly update the pixels within Blender background.
+* Open `source/blender/compositor/operations/COM_ViewerOperation.h` and change lines
+```
+bool isOutputOperation(bool /*rendering*/) const { 
+if (G.background) return false; return isActiveViewerOutput();
+```
+into 
+```
+bool isOutputOperation(bool /*rendering*/) const {return isActiveViewerOutput(); }
+```
+* Open `source/blender/compositor/operations/COM_PreviewOperation.h` and change line
+```
+bool isOutputOperation(bool /*rendering*/) const { return !G.background; }
+```
+into 
+```
+bool isOutputOperation(bool /*rendering*/) const { return true; }
+```
 
-- Enabled rendering of viewer nodes and previews in background mode.
-(*source:* https://blender.stackexchange.com/questions/69230/python-render-script-different-outcome-when-run-in-background/81240#81240)
-https://wiki.blender.org/wiki/Building_Blender/Windows
-- For more information see the Blender documentation in the Appendix attached.
+### Create synthetic images in Blender + Annotations
+* Render 3D person images
+```
+#!./scripts/run_blender.sh
+"Blender Custom/blender.exe" --background --python "Data/Blender.py" -- 1
+```
+* Annotation files are saved in the respective `.txt` file with the same name and has the following format
+```
+image_file_path min_x,min_y,max_x,max_y,class_id min_x,min_y,max_x,max_y,class_id ...
+```
 
-### 1.2 PYTHON IN BLENDER 
-Folder: *Huy/Data/*
+### Run YOLOv3 Blender synthetic model
 
-- 3D images are constructed, assembled, and rendered using the Blender.py script. Comments and documentations are included.
-- Adjust and change certain parameters and inputs in the Blender.py to create the synthetic data accordingly.
-- For more information on the custom Python API *BPY* module see: https://docs.blender.org/api/current/index.html
-
-### 1.3 HPC WINDOWS CLUSTER 
-Folder: *Huy/*
-
-- Open Microsoft HPC Job Manager > New Job from XML file > /Huy/HPC_cluster_1.xml > Resource Selection > Select one of the available nodes.
-- In this case, we used four nodes to parallelize the rendering of 3D synthetic images. Each HPC_cluster_x.xml for x in {1,2,3,4} represents a batch.
-- For more information see the HPC Windows Cluster documentation by Jimenez Jose:
-https://confluence.atlas.philips.com/display/CMON/How-to+run+applications+on+the+Windows+HPC+cluster
+## Custom Datasets for YOLOv3 Blender Training
 
 
-## 2. EXTRACTING IMG FROM GOOGLE OPENIMAGES DATABASE V6
----
-### 2.1 FILTER, DOWNLOAD, AND CREATE ANNOTATION FILES USING LINUX CLUSTER 
-Folder: *Huy/Data/OpenImages/*
+## Extracting RGB Images from Google OpenImages Database v6
 
 - Non-person IMG are filtered and downloaded using the openimages.py script (incl. documentations and comments).
 -- Configure settings and initialize paths in [cfg.txt]()
@@ -55,6 +66,14 @@ Folder: *Huy/Data/OpenImages/*
 -- Respective annotations are in the [<imgfile>.txt]() file with format `imagefile_path x_min,y_min,x_max,y_max,class_id` 
 *(source: https://github.com/qqwweee/keras-yolo3)*
 - For more information on Google OpenImages Database see: https://storage.googleapis.com/openimages/web/download.html
+
+## Acknowledgements
+
+Code is inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3).
+
+
+
+
 
 
 ## 3. CREATING ANNOTATIONS FILE FROM DATA REQUIRED FOR YOLOV3
