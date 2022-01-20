@@ -3,15 +3,23 @@ Person-detection model based on YOLOv3 using 3D synthetic images from Blender.
 
 A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3).
 
+---
+
 ## Introduction
 Following up on Philips’ recent development in Remote Patient Monitoring and synthetic data, this algorithm is a continuation of the existing vision-based patient monitoring framework, aiming to improve the current object detection model using Deep Learning and synthetic data. That is, integrating patient monitoring with the state-of-the-art YOLOv3 object detection model is enormously promising as it provides a comprehensive knowledge base that accelerates the clinical response-ability, effectively allowing us to respond to emerging events or fatal incidents. Additionally, by embedding Domain Adaptation in the pipeline of Deep Learning, the objective is to exploit synthetic data allowing us to address and circumvent the strict privacy constraints and lack of available data in the healthcare industry. 
 
 Hence, in the virtue of confidentiality restrictions and ethical claims, there is an increasing incentive to use less privacy-intrusive methods and opt for data that do not directly refer to identifiable persons. Therefore, we constructed a privacy-preserving object detection model using YOLOv3 based on synthetic data. Especially for AI and Machine Learning practices that require enormous amount of data to be effective, innovative solutions to preserve privacy are necessary to alleviate the scarcity of health care data available. The disintermediation of what was previously considered as a long-standing goal for many hospitals, is now slowly becoming more of a realization with the introduction of AI-powered patient monitoring, allowing healthcare providers to continue monitor their patients remotely in real-time without excessively relying on confidential data; all contributing to the paradigm shift of healthcare.
 
----
+## Prerequisites
 
-## Quick Start
----
+* python 3.8
+* tensorflow 2.4
+* Keras 2.1.4
+* NVIDIA GPU + CUDA CuDNN
+* Blender 2.92 (custom-built)
+
+## Getting Started
+
 ### 1.1 BLENDER 2.92 CUSTOM-BUILT 
 Folder: *Huy/Blender Custom/*
 
