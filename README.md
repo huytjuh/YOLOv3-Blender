@@ -1,11 +1,13 @@
 # **YOLOv3 Blender**
 
 ![](https://learn.alwaysai.co/hubfs/Screen%20Shot%202020-01-23%20at%202.28.16%20PM.png)
-![](https://img.shields.io/github/license/huytjuh/YOLOv3-Blender)
+![](https://img.shields.io/github/license/huytjuh/YOLOv3-Blender) ![](https://img.shields.io/maintenance/no/2021)
 
 Person-detection model based on YOLOv3 using 3D synthetic images from Blender. 
 
 A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3).
+
+***Version: 2.0 (2019)***
 
 ---
 
