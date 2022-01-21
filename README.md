@@ -7,7 +7,7 @@ Person-detection model based on YOLOv3 using 3D synthetic images from Blender.
 
 A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3).
 
-***Version: 2.0 (2019)***
+***Version: 2.0 (2021)***
 
 ---
 
