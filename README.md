@@ -1,6 +1,7 @@
 # **YOLOv3 Blender**
 
 ![](https://learn.alwaysai.co/hubfs/Screen%20Shot%202020-01-23%20at%202.28.16%20PM.png)
+![](https://img.shields.io/github/license/huytjuh/YOLOv3-Blender)
 
 Person-detection model based on YOLOv3 using 3D synthetic images from Blender. 
 
