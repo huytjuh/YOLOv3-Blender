@@ -1,0 +1,197 @@
+0,Pillow
+1,Furniture
+2,Television
+3,House
+4,Home appliance
+5,Couch
+6,Shelf
+7,Coffee table
+8,Desk
+9,Table
+10,Window
+11,Sofa bed
+12,Studio couch
+13,Curtain
+14,Chest of drawers
+15,Nightstand
+16,Drawer
+17,Car
+18,Kitchen & dining room table
+19,Building
+20,Plant
+21,Houseplant
+22,Flowerpot
+23,Drill (Tool)
+24,Tool
+25,Chair
+26,Kitchen appliance
+27,Sink
+28,Gas stove
+29,Cabinetry
+30,Microwave oven
+31,Countertop
+32,Fashion accessory
+33,Boat
+34,Tableware
+35,Flower
+36,Sewing machine
+37,Bed
+38,Vehicle
+39,Umbrella
+40,Tent
+41,Tree
+42,Office building
+43,Palm tree
+44,Swimming pool
+45,Wine glass
+46,Rose
+47,Bookcase
+48,Book
+49,Medical equipment
+50,Dog
+51,Dairy Product
+52,Cocktail
+53,Vase
+54,Oven
+55,Cupboard
+56,Bathroom cabinet
+57,Tire
+58,Wheel
+59,Closet
+60,Printer
+61,Office supplies
+62,Cat
+63,Loveseat
+64,Stool
+65,Musical keyboard
+66,Piano
+67,Land vehicle
+68,Helmet
+69,Mammal
+70,Ball
+71,Sports equipment
+72,Billiard table
+73,Infant bed
+74,Clothing
+75,Porch
+76,Musical instrument
+77,Computer monitor
+78,Mechanical fan
+79,Ceiling fan
+80,Door
+81,Fireplace
+82,Box
+83,Watercraft
+84,Christmas tree
+85,Coffee
+86,Wood-burning stove
+87,Bowling equipment
+88,Platter
+89,Light bulb
+90,Lamp
+91,Filing cabinet
+92,Stretcher
+93,Stairs
+94,Syringe
+95,Food
+96,Refrigerator
+97,Drum
+98,Cart
+99,Bathroom accessory
+100,Plumbing fixture
+101,Tap
+102,Toy
+103,Juice
+104,Saucer
+105,Coffee cup
+106,Tea
+107,Computer keyboard
+108,Laptop
+109,Computer mouse
+110,Egg (Food)
+111,Seafood
+112,Fish
+113,Mug
+114,Beer
+115,Picture frame
+116,Wardrobe
+117,Boot
+118,Drink
+119,Bottle
+120,Snack
+121,Dessert
+122,Plate
+123,Ladder
+124,Carnivore
+125,Pasta
+126,Wine rack
+127,Wine
+128,Tin can
+129,Serving tray
+130,Perfume
+131,Guitar
+132,Violin
+133,Table tennis racket
+134,Pitcher (Container)
+135,Bread
+136,Microphone
+137,Bowl
+138,Fax
+139,Glasses
+140,Sunglasses
+141,Goggles
+142,Candle
+143,Coffeemaker
+144,Bicycle
+145,Bicycle wheel
+146,Spoon
+147,Kitchen utensil
+148,Fork
+149,Fast food
+150,Weapon
+151,Knife
+152,Auto part
+153,Window blind
+154,Rifle
+155,Whiteboard
+156,Handbag
+157,Strawberry
+158,Cake
+159,Pastry
+160,Footwear
+161,Harpsichord
+162,Truck
+163,Cabbage
+164,Vegetable
+165,Dice
+166,Kettle
+167,Teapot
+168,Sparrow
+169,Roller skates
+170,Stethoscope
+171,Balloon
+172,Common sunflower
+173,Fruit
+174,Shower
+175,Picnic basket
+176,Milk
+177,Pineapple
+178,Jug
+179,Racket
+180,Airplane
+181,Sculpture
+182,Tank
+183,Van
+184,Bench
+185,Animal
+186,Guacamole
+187,Remote control
+188,Apple
+189,Organ (Musical Instrument)
+190,Door handle
+191,Clock
+192,Barrel
+193,Baked goods
+194,Lobster
+195,Cheese
+196,Hamburger
