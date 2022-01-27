@@ -7553,3 +7553,4 @@
 /home/2014-0353_generaleye/Huy/Data/ArgusImages/session_2019-06-28_11-31-34_926.jpg 391,34,519,286,0
 /home/2014-0353_generaleye/Huy/Data/ArgusImages/session_2019-06-28_11-31-34_938.jpg 374,7,493,287,0
 /home/2014-0353_generaleye/Huy/Data/ArgusImages/session_2019-06-28_11-31-34_953.jpg 255,29,450,255,0
+
