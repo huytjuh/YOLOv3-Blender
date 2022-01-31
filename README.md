@@ -69,6 +69,8 @@ python3 scripts/evaluation.py
 
 ## Test Results & Performances
 
+![](https://github.com/huytjuh/YOLOv3-Blender/blob/main/example/example_graph.png)
+
 ## Custom Datasets for YOLOv3 Blender Training
 
 ### YOLOv3 Blender Training 
