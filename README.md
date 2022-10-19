@@ -123,3 +123,5 @@ image_file_path min_x,min_y,max_x,max_y,class_id min_x,min_y,max_x,max_y,class_i
 ## Acknowledgements
 
 Code is inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3).
+
+.
